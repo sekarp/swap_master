@@ -11,6 +11,9 @@ namespace TestProject
         static void Main(string[] args)
         {
             PrintNumbers();
+            PrintCharacters();
+            ManualTest test = new ManualTest();
+            test.RunTests("R u there?");
             Console.Read();
         }
 
@@ -20,6 +23,17 @@ namespace TestProject
             {
                 Console.WriteLine(i);
             }
+        }
+
+        static void PrintCharacters()
+        {
+            List<char> charaters = new List<char>() { 'a', 'b', 'c', 'd', 'e', 'f' };
+
+            foreach(char c in charaters)
+            {
+                Console.WriteLine(c);
+            }
+
         }
     }
 }
